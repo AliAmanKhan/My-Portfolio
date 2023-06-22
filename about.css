@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-about {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.middle-left {
+    padding-top: 5vh;
+    height: 110vh;
+    width: 25vw;
+    background-image: linear-gradient(rgb(155, 120, 111, 0.7) 40%, rgb(155, 120, 111, 0.7) 60%);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    transform: rotate(10deg);
+    z-index: -1;
+}
+
+.my-image {
+    box-shadow: rgba(17, 17, 26, 0.4) 0 8px 24px, rgba(17, 17, 26, 0.4) 0 16px 56px, rgba(17, 17, 26, 0.4) 0 24px 80px;
+    border-radius: 50%;
+    height: 60vh;
+    transform: rotate(-10deg);
+}
+
+.img {
+    margin-top: 10vh;
+}
+
+.middle-right {
+    /* margin-top: 30vh; */
+    height: 40vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3vh;
+    font-family: 'poppins';
+    font-weight: lighter;
+    text-transform: capitalize;
+    margin-left: 5vw;
+}
+
+.main-about {
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0.4) 50%), url(background.jpg);
+    background-size: 100%;
+    z-index: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b {
+    margin-top: 3vh;
+    color: white;
+}
+
+.navbar {
+    margin-left: -5vw;
+}
+.nav{
+    top: 0;
+    margin-top: -2vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+@media screen and (max-width: 450px) {
+    .middle-right {
+        margin-bottom: 18vh;
+        font-size: 13px;
+        margin-left: 15vw;
+        margin-top: -6vh;
+    }
+    .middle-left{
+        margin-left: -2vh;
+    }
+    .img img {
+        height: 25vh;
+        margin-top: -2vh;
+    }
+}
+@media screen and (max-width: 385px) {
+    .middle-right {
+        font-size: 11px;
+        margin-top: 6vh;
+    }
+}
+@media screen and (max-width: 350px) {
+    .middle-right {
+        font-size: 9px;
+        margin-top: 12vh;
+    }
+    .img img {
+        height: 20vh;
+        margin-top: -2vh;
+    }
+}

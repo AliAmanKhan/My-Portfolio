@@ -1,0 +1,81 @@
+.main-content{
+    height: 100vh;
+}
+.main{
+    background-attachment: fixed;
+    height: calc(90vh*3);
+}
+.middle{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pro-detail1, .pro-detail{
+    background-image: url(sports.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5vh;
+    height: 75vh;
+    width: 75vw;
+    border: 1px solid black;
+    border-radius: 5vh;
+}
+.pro-img1{
+    height: 75vh;
+    width: 75vw;
+    border: 1px solid black;
+    border-radius: 5vh;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    color: black;
+}
+.pro-img1:hover{
+    background-image: linear-gradient(to bottom, transparent, black);
+    color: aliceblue;
+}
+.position-pro{
+    height: 30vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    height: 5vh;
+    font-size: x-large;
+}
+.description p{
+    height: 15vh;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 5vh;
+    width: 10vw;
+    color: white;
+    background-color: green;
+}
+@media screen and (max-width:380px){
+    .middle{
+        margin-top: 50vh;
+    }
+    /* .pro-details1, .pro-detail{
+
+    } */
+    .footer{
+        /* margin-left: -10Svw; */
+        z-index: 5;
+    }
+    .title{
+        font-size: large;
+    }
+    .description p{
+        font-size: small;
+    }
+}
