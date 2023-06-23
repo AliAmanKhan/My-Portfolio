@@ -14,11 +14,6 @@ body {
     font-family: 'poppins';
     width: 100%;
 }
-main{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
 /* navbar css starts */
 .nav {
 
@@ -217,6 +212,9 @@ main{
 
     .hr2 {
         margin-top: 3vh;
+    }
+    .main-content{
+        height: auto;
     }
 }
 
