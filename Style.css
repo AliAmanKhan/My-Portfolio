@@ -172,8 +172,9 @@ body {
     }
 
     .buttons .button button {
-        height: 6vh;
-        width: 20vw;
+        padding: 1vh;
+        height: 4vh;
+        width: 22vw;
         margin-left: 5vw;
         margin-right: 5vw;
     }
