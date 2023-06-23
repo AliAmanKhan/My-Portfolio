@@ -172,6 +172,8 @@ body {
     }
 
     .buttons .button button {
+        font-size: 0.7rem;
+        font-weight: 300;
         padding: 1vh;
         height: 4vh;
         width: 22vw;
@@ -187,12 +189,13 @@ body {
     .buttons .button button:hover {
         border: 2px solid #eb795c;
         background-color: black;
-        font-size: 2vh;
-        font-weight: bold;
+        font-size: 0.7rem;
+        font-weight: 300;
         font-style: none;
         color: #FAED26;
-        height: 6vh;
-        width: 20vw;
+        padding: 1vh;
+        height: 2vh;
+        width: 22vh;
         transform: translateY(-3px);
     }
 
