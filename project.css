@@ -1,0 +1,144 @@
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-attachment: fixed;
+    height: 290vh;
+    /* height: auto; */
+}
+
+.this {
+    backdrop-filter: blur(20px);
+    color: yellow;
+}
+
+.middle {
+    height: 215vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+.pro-detail1,
+.pro-detail {
+    background-image: url(sports.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5vh;
+    height: 75vh;
+    width: 75vw;
+    border: 1px solid black;
+    border-radius: 5vh;
+}
+
+.pro-img1 {
+    height: 75vh;
+    width: 75vw;
+    border: 1px solid black;
+    border-radius: 5vh;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    color: black;
+}
+
+.pro-img1:hover {
+    background-image: linear-gradient(to bottom, transparent, black);
+    color: aliceblue;
+}
+
+.position-pro {
+    height: 30vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    height: 5vh;
+    font-size: x-large;
+    margin: 1vh;
+}
+
+.description p {
+    height: 15vh;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+}
+
+button {
+    height: 5vh;
+    width: 10vw;
+    background-color: yellow;
+    border: 1px solid black;
+    box-shadow: rgb(255, 255, 255) 3px 3px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+    margin-top: 1vh;
+}
+.position-pro a{
+    text-decoration: none;
+}
+button:hover {
+    background-color: black;
+    color: yellow;
+    border-color: yellow;
+    box-shadow: rgb(255, 255, 0, 1.0) 3px 3px 0;
+    transform: translateY(-3px);
+}
+.footer{
+    z-index: 10;
+}
+@media screen and (max-width:600px){
+    .middle{
+        margin-top: 46vh;
+    }
+    .main{
+        height: 320vh;
+    }
+    button{
+        width: 20vw;
+        margin-bottom: 2vh;
+    }
+}
+@media screen and (max-width:380px) {
+    .middle {
+        margin-top: 50vh;
+    }
+
+    /* .pro-details1, .pro-detail{
+
+    } */
+    .footer {
+        /* margin-left: -10Svw; */
+        z-index: 5;
+    }
+
+    .title {
+        font-size: large;
+    }
+
+    .description p {
+        font-size: small;
+    }
+}
